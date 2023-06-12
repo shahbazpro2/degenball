@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
+  @apply bg-gray-100;
+}
+
+.container {
+  @apply mx-auto px-4;
+  max-width: 1300px;
+}
+
+.btn {
+  @apply px-10 py-2 rounded-md text-white;
+
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 57%,
+    rgba(69, 160, 252, 1) 100%
+  );
+}
+
+.nav-item {
+  @apply cursor-pointer hover:text-primary;
+}
+.nav-item-active {
+  @apply text-primary;
+}
+
+.overlay {
+  @apply w-full h-full absolute bg-black opacity-60 -z-[9px];
+}
+
+.homecard {
+  background-image: linear-gradient(
+    108.18deg,
+    rgba(234, 76, 137, 0.2) -2.02%,
+    rgba(77, 68, 198, 0.2) 100%
+  );
 }
