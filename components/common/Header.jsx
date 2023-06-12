@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { usePathname } from 'next/navigation'
 
 const links = [
     { name: 'Home', path: '/' },
@@ -17,9 +18,9 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 const Header = () => {
-    const router = null
+    const pathname = usePathname()
     return (
-        <div className='bg-secondary text-white'>
+        <div className='absolute top-0 text-white z-10 w-full'>
             <div className='container'>
                 <Disclosure as="nav">
                     {({ open }) => (
@@ -40,6 +41,7 @@ const Header = () => {
                                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between py-5">
                                         <div className='sm:w-[100px] lg:w-[150px] flex sm:block justify-center lg:justify-start'>
                                             <img src="/assets/images/logo.png" alt="logo" className='w-full' />
+                                            <div className="text-xs -mt-3 left-14 absolute">Powered by AIDRIP</div>
                                         </div>
                                         <div className="hidden sm:ml-6 sm:block">
                                             <div className="flex space-x-4 items-center h-full">
@@ -48,10 +50,10 @@ const Header = () => {
                                                         key={item.name}
                                                         href={item.path}
                                                         className={classNames(
-                                                            item.current ? ' text-primary' : 'text-white hover:text-primary ',
-                                                            'rounded-md px-3 py-2 text-sm font-medium cursor-pointer'
+                                                            pathname === item.path ? ' text-primary' : 'text-white hover:text-primary ',
+                                                            'rounded-md px-3 py-2 text-sm font-bold cursor-pointer'
                                                         )}
-                                                        aria-current={item.current ? 'page' : undefined}
+                                                        aria-current={pathname === item.path ? 'page' : undefined}
                                                     >
                                                         {item.name}
                                                     </Link>

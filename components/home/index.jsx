@@ -6,24 +6,29 @@ const cardData = [
         title: 'Stake',
         description: 'Stake your DRIP tokens to earn more DRIP tokens',
         video: '/assets/videos/stake.mp4',
+        link: '/stake',
         active: true
     },
     {
         title: 'Lottery',
         description: 'Lottery your DRIP tokens to earn more DRIP tokens',
         video: '/assets/videos/lottery.mp4',
+        link: '/lottery',
         active: true
     },
     {
         title: 'NFTs',
         description: 'NFTs your DRIP tokens to earn more DRIP tokens',
         video: '/assets/videos/nft.mp4',
+        link: '/nft',
         active: true
     },
     {
-        title: 'Play',
-        description: 'Coming Soon',
-        active: false
+        title: 'Airdrop',
+        description: 'Airdrop your DRIP tokens to earn more DRIP tokens',
+        video: '/assets/videos/airdrop.mp4',
+        link: '/airdrop',
+        active: true
     }
 ]
 
@@ -39,9 +44,9 @@ const Home = () => {
                 <div className="container z-10 ">
                     <div className='flex flex-col items-start'>
                         <div className='w-[600px] space-y-7'>
-                            <div className="text-6xl">AirDrip</div>
+                            <div className="text-6xl">AiDrip</div>
                             <p className='text-2xl font-light'>
-                                AirDrip is a decentralized finance (DeFi) protocol that allows users to earn interest on their cryptocurrency by depositing it into one of several pools supported by the platform. Interest rates are determined algorithmically based on supply and demand. Users can deposit and withdraw their funds at any time, subject to a 24-hour waiting period.
+                                AiDrip is a decentralized finance (DeFi) protocol that allows users to earn interest on their cryptocurrency by depositing it into one of several pools supported by the platform. Interest rates are determined algorithmically based on supply and demand. Users can deposit and withdraw their funds at any time, subject to a 24-hour waiting period.
                             </p>
                             <button className='btn'>Buy</button>
                         </div>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='bg-secondary text-white'>
             <div className="container">
                 <div className="grid grid-cols-12 lg:gap-10 py-5 lg:py-0">
-                    <div className="col-span-12 lg:col-span-4 bg-[#171717] p-5 flex justify-center flex-col items-center ">
+                    <div className="col-span-12 lg:col-span-4 p-5 flex justify-center flex-col items-center ">
                         <img src="/assets/images/logo.png" alt="logo" className='lg:w-[200px]' />
                         <div className="mt-3">
                             Co-Built by AI and Drippers for Drippers

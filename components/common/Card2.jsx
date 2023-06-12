@@ -1,11 +1,13 @@
+"use client"
+import { useRouter } from 'next/navigation'
 import React from 'react'
 import { twMerge } from 'tailwind-merge'
 
 const Card2 = ({ data }) => {
-
+    const router = useRouter()
 
     return (
-        <div className={twMerge(`rounded-lg rounded-tr-none rounded-tl-none hover:shadow-lg bg-white cursor-pointer`, !data?.active && 'bg-gray-200 hover:shadow-none')}>
+        <div className={twMerge(`rounded-lg rounded-tr-none rounded-tl-none hover:shadow-lg bg-white cursor-pointer`, !data?.active && 'bg-gray-200 hover:shadow-none')} onClick={() => router.push(data?.link)}>
             <div className='h-[200px]'>
                 <video className='w-full h-full object-cover' autoPlay loop muted>
                     <source src={data?.video} type='video/mp4' />
