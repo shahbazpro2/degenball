@@ -1,6 +1,8 @@
 import React from 'react'
 import Card2 from '../common/Card2'
 
+
+
 const cardData = [
     {
         title: 'Stake',
@@ -49,6 +51,7 @@ const Home = () => {
                                 AiDrip is a decentralized finance (DeFi) protocol that allows users to earn interest on their cryptocurrency by depositing it into one of several pools supported by the platform. Interest rates are determined algorithmically based on supply and demand. Users can deposit and withdraw their funds at any time, subject to a 24-hour waiting period.
                             </p>
                             <button className='btn'>Buy</button>
+
                         </div>
                     </div>
 

@@ -1,9 +1,13 @@
-import Home from '@/components/home'
+'use client'
+import Home from "@/components/home";
+
+
 
 export default function index() {
   return (
     <>
       <Home />
+
     </>
   )
 }

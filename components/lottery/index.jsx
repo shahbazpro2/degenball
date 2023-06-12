@@ -79,7 +79,7 @@ const Lottery = () => {
                 <div className="container z-10 text-center w-[700px] mb-10">
                     <div className="text-6xl text-center  m-auto ">$3410650.401</div>
                     <div className='text-white text-xl mt-2'>Total Rewards Distributed</div>
-                    <p className='my-7'>When you buy $100–$1000 worth of AIDOGE through Camelot, youll get a ticket that is weighted in accordance with your purchase. Distribution of ARB airdrops will occur every 30 minutes. The algorithm is open source. Good luck!</p>
+                    <p className='my-7'>When you buy $100–$1000 worth of Aidrip through Camelot, youll get a ticket that is weighted in accordance with your purchase. Distribution of ARB airdrops will occur every 30 minutes. The algorithm is open source. Good luck!</p>
                     <button className='btn'>View Rules</button>
 
                 </div>
@@ -109,9 +109,9 @@ const Lottery = () => {
                 <div className="grid grid-cols-2 gap-5">
                     <TableLayout title="My Wallet" >
                         <div className="py-10 text-center">
-                            <img src="/assets/images/aidoge.svg" alt="icon" className="w-10 h-10 inline-block" />
-                            <div className="mt-1">0.000AIDOGE</div>
-                            <button className='btn mt-5 w-[400px]'>Buy AIDOGE</button>
+                            <img src="/assets/images/logo.png" alt="icon" className="w-28 inline-block" />
+                            <div className="mt-1">0.000Aidrip</div>
+                            <button className='btn mt-5 w-[400px]'>Buy Aidrip</button>
                         </div>
                     </TableLayout>
 

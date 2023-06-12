@@ -81,12 +81,12 @@ const Airdrop = () => {
                         <div className='text-primary text-3xl '>Referral reward:</div>
                         <div className='text-xl'> XXXX AID RIP</div>
                     </div>
-                    <button className='btn'>Claim</button>
+                    <a href="#nft" className='btn'>Claim</a>
 
                 </div>
             </div>
 
-            <div className="my-28 container">
+            <div className="my-28 container" id="nft">
                 <div className="text-4xl">MY NFTs</div>
                 <div className="flex items-center justify-between my-5">
                     <div className="flex items-center mb-3">
