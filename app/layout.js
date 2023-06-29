@@ -7,8 +7,8 @@ import Footer from '@/components/common/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'AIDRIP',
-  description: 'AIDRIP is a lottery game based on the Binance Smart Chain.',
+  title: 'Degenball',
+  description: 'Degenball is a decentralized sports betting platform.',
 }
 
 export default function RootLayout({ children }) {

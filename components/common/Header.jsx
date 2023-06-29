@@ -10,11 +10,12 @@ import { usePathname } from 'next/navigation'
 
 
 const links = [
-    { name: 'Home', path: '/' },
-    { name: 'Airdrop', path: '/airdrop' },
-    { name: 'Stake', path: '/stake' },
-    { name: 'Lottery', path: '/lottery' },
-    { name: "NFT's", path: '/nft' },
+    { name: 'Buy Ticket', path: '#top' },
+    { name: 'How to Play', path: '#play' },
+    { name: 'Prizes & Odds', path: '#prizes' },
+    { name: 'About Us', path: '#about' },
+    { name: "Recent Winners", path: '#winners' },
+    { name: "Faqs", path: '#faq' },
 ]
 
 function classNames(...classes) {
@@ -25,16 +26,16 @@ const Header = () => {
     return (
         <>
 
-            <div className='absolute top-0 text-white z-10 w-full'>
+            <div className='absolute top-0 text-black z-10 w-full'>
                 <div className='container'>
                     <Disclosure as="nav">
                         {({ open }) => (
                             <>
-                                <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-7 ">
-                                    <div className="relative flex h-16 items-center justify-between">
-                                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                                <div className="py-7 ">
+                                    <div className="relative flex h-16 items-center justify-between w-full">
+                                        <div className="absolute inset-y-0 left-0 flex items-center xl:hidden">
                                             {/* Mobile menu button*/}
-                                            <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                            <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-black bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                                 <span className="sr-only">Open main menu</span>
                                                 {open ? (
                                                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -45,17 +46,18 @@ const Header = () => {
                                         </div>
                                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between py-5">
                                             <div className='sm:w-[100px] lg:w-[150px] flex sm:block justify-center lg:justify-start'>
-                                                <img src="/assets/images/logo.png" alt="logo" className='w-full' />
-                                                <div className="text-xs -mt-3 left-14 absolute">Powered by AIDRIP</div>
+                                                logo
+                                                {/*  <img src="/assets/images/logo.png" alt="logo" className='w-full' />
+                                                <div className="text-xs -mt-3 left-14 absolute">Powered by AIDRIP</div> */}
                                             </div>
-                                            <div className="hidden sm:ml-6 sm:block">
+                                            <div className="hidden sm:ml-6 xl:block">
                                                 <div className="flex space-x-4 items-center h-full">
                                                     {links.map((item) => (
                                                         <Link
                                                             key={item.name}
                                                             href={item.path}
                                                             className={classNames(
-                                                                pathname === item.path ? ' text-primary' : 'text-white hover:text-primary ',
+                                                                pathname === item.path ? ' text-primary' : 'text-black hover:text-primary ',
                                                                 'rounded-md px-3 py-2 text-sm font-bold cursor-pointer'
                                                             )}
                                                             aria-current={pathname === item.path ? 'page' : undefined}
@@ -75,8 +77,8 @@ const Header = () => {
                                     </div>
                                 </div>
 
-                                <Disclosure.Panel className="sm:hidden bg-white rounded-lg">
-                                    <div className="space-y-1 px-2 pb-3 pt-2">
+                                <Disclosure.Panel className="xl:hidden bg-white rounded-lg">
+                                    <div className="space-y-1 px-2 pb-3 pt-2 ">
                                         {links.map((item) => (
                                             <Disclosure.Button
                                                 key={item.name}

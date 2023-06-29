@@ -3,27 +3,42 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 body {
-  @apply bg-gray-100;
+  /* background: url("/assets/images/bg.webp") no-repeat top center fixed; */
+  background-color: #efecff;
+  color: black;
 }
 
 .container {
   @apply mx-auto px-4;
-  max-width: 1300px;
+  max-width: 1400px;
 }
 
 .btn {
   @apply px-10 py-2 rounded-md text-white;
 
   background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 57%,
-    rgba(69, 160, 252, 1) 100%
+    210deg,
+    #00eaff 0%,
+    #0080ff 25%,
+    #8000ff 50%,
+    #e619e6 75%,
+    #f00 100%
   );
+}
+
+.btn-simple {
+  @apply px-10 py-2 rounded-md text-white bg-secondary text-sm md:text-base;
+}
+
+.btn-outline {
+  @apply px-10 py-2 rounded-md text-white border border-white text-sm md:text-base;
+}
+.btn-outline-dark {
+  @apply px-2 py-1 rounded-md text-secondary border border-secondary text-sm md:text-base;
 }
 
 .nav-item {
@@ -43,4 +58,8 @@ body {
     rgba(234, 76, 137, 0.2) -2.02%,
     rgba(77, 68, 198, 0.2) 100%
   );
+}
+
+.playbg {
+  clip-path: polygon(0% 0%, 0% 100%, 66% 100%, 100% 74%, 100% 0%);
 }

@@ -8,41 +8,36 @@ const Footer = () => {
             <div className="container">
                 <div className="grid grid-cols-12 lg:gap-10 py-5 lg:py-0">
                     <div className="col-span-12 lg:col-span-4 p-5 flex justify-center flex-col items-center ">
-                        <img src="/assets/images/logo.png" alt="logo" className='lg:w-[200px]' />
+                        Logo
                         <div className="mt-3">
-                            Co-Built by AI and Drippers for Drippers
+                            Based on transparency, anonymity,
+                            security, and fairness, Ridotto is
+                            a fully scalable alternative to
+                            centralized gambling.
                         </div>
                     </div>
                     <div className="col-span-12 lg:col-span-8 flex flex-col items-center justify-center my-5">
                         <div className="py-7 border-b border-[#515151] flex items-center justify-center w-full">
                             <ul className='flex flex-col lg:flex-row items-start gap-10 lg:gap-20'>
-                                <Link href="/rental">
-                                    <li className='text-lg'>Resources</li>
+                                <Link href="/">
+                                    <li className='text-lg'>Column 1</li>
                                     <ul className="mt-3 space-y-1">
-                                        <li>Whitepaper</li>
-                                        <li>FAQs</li>
+                                        <li>Link1</li>
+                                        <li>Link2</li>
                                     </ul>
                                 </Link>
-                                <Link href="/sales">
-                                    <li className='text-lg'>Products</li>
+                                <Link href="/">
+                                    <li className='text-lg'>Column 2</li>
                                     <ul className="mt-3 space-y-1">
-                                        <li>Lucky Drip</li>
-                                        <li>Earn</li>
-                                        <li>NFTs</li>
-                                    </ul>
-                                </Link>
-                                <Link href="/contact">
-                                    <li className='text-lg'>Press</li>
-                                    <ul className="mt-3 space-y-1" >
-                                        <li>Terms of Use</li>
-                                        <li>Privacy Policy</li>
+                                        <li>Link1</li>
+                                        <li>Link2</li>
                                     </ul>
                                 </Link>
 
                             </ul>
                         </div>
                         <div className='text-sm text-[#838383] mt-3'>
-                            Copyright © {new Date().getFullYear()} Airdrop. All Rights Reserved
+                            Copyright © {new Date().getFullYear()}. All Rights Reserved
                         </div>
 
                     </div>
